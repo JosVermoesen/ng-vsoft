@@ -4,7 +4,6 @@
 
 Working version here: [Vsoft software site](https://vsoft.be)
 Working version here: [RV Insurance site](https://rv.be)
-Working version here: [ApiDemo site](https://apidemos.vsoft.be)
 
 marIntegraal users can get in touch for their own version of this app (including use of mail service via our dotnet core server)
 
