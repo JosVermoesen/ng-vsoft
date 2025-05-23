@@ -1,0 +1,17 @@
+/* Importing Bootstrap SCSS file. */
+@use "bootstrap/scss/bootstrap";
+@use "bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/ngx-toastr/toastr.css";
+
+// for a cool purple scroll bar
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}

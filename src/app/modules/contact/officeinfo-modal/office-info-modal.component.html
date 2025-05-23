@@ -1,0 +1,66 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{ title }}</h4>
+  <button
+    type="button"
+    class="close pull-right"
+    aria-label="Close"
+    (click)="bsModalRef.hide()"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <h4 style="color: red">
+    COVID-19: Sinds maart 2020 uitsluitend afspraken bij U thuis of online via
+    MeetUp!
+  </h4>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Voormiddag</th>
+        <th>Namiddag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maandag</td>
+        <td>na afspraak</td>
+        <td>na afspraak</td>
+      </tr>
+      <tr>
+        <td>Dinsdag</td>
+        <td>na afspraak</td>
+        <td>na afspraak</td>
+      </tr>
+      <tr>
+        <td>Woensdag</td>
+        <td>na afspraak</td>
+        <td>na afspraak</td>
+      </tr>
+      <tr>
+        <td>Donderdag</td>
+        <td>na afspraak</td>
+        <td>na afspraak</td>
+      </tr>
+      <tr>
+        <td>Vrijdag</td>
+        <td>na afspraak</td>
+        <td>na afspraak</td>
+      </tr>
+      <tr>
+        <td>Zaterdag</td>
+        <td>na afspraak</td>
+        <td>na afspraak</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">
+    Sluiten
+  </button>
+</div>

@@ -1,0 +1,65 @@
+<nav id="simple-navbar" class="navbar navbar-expand-md bg-light">
+  <div class="container">
+    <a routerLink="/home" class="navbar-brand">{{
+      "NAVBAR.NavTitle" | translate
+    }}</a>
+
+    <button
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      class="navbar-toggler"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            routerLink="/contact"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-link"
+            >{{ "NAVBAR.NavContact" | translate }}</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            routerLink="/marintegraal"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-link"
+            >marIntegraal</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            routerLink="/hosting"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-link"
+            >Hosting</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/about"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-link"
+            >{{ "NAVBAR.NavAbout" | translate }}</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a (click)="onLanguageModal()">
+            <i class="bi bi-translate"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
