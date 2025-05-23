@@ -36,14 +36,10 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": [
-              "bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
+            "scripts": ["bootstrap/dist/js/bootstrap.bundle.min.js"],
             "browser": "src/main.ts",
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "."
-              ]
+              "includePaths": ["."]
             }
           },
           "configurations": {
@@ -60,7 +56,15 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              }
             },
             "development": {
               "optimization": false,
