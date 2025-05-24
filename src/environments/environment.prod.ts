@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  version: '19.2.12',
+  version: '19.2.13',
 
   // ApiUrl of the production database
   apiUrl: 'https://rv.be/api/',
