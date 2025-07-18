@@ -6,14 +6,14 @@ import { ContentfulService } from './../../global/shared/services/contentful.ser
 import { SeoService } from './../../global/shared/services/seo.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { MdToHtmlPipe } from '../../global/shared/helpers/md-to-html.pipe';
-import { NgIf } from '@angular/common';
+
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 @Component({
   selector: 'app-marintegraal',
   templateUrl: './marintegraal.component.html',
   standalone: true,
-  imports: [AccordionModule, NgIf, MdToHtmlPipe, TranslateModule],
+  imports: [AccordionModule, MdToHtmlPipe, TranslateModule],
 })
 export class MarintegraalComponent implements OnInit {
   accordeonUpdateOpen = true;

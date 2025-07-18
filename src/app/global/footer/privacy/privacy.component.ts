@@ -4,14 +4,14 @@ import { Entry } from 'contentful';
 
 import { ContentfulService } from './../../../global/shared/services/contentful.service';
 import { MdToHtmlPipe } from '../../shared/helpers/md-to-html.pipe';
-import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-privacy',
   templateUrl: './privacy.component.html',
   styleUrls: ['./privacy.component.scss'],
   standalone: true,
-  imports: [NgIf, MdToHtmlPipe],
+  imports: [MdToHtmlPipe],
 })
 export class PrivacyComponent implements OnInit {
   contentfulItem!: Entry<any>;

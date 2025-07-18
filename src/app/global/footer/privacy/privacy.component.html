@@ -5,12 +5,14 @@
     <div class="card text-center border-primary mb-resp">
       <button (click)="refresh()" type="submit" class="btn btn-danger btn-block">Keuzes opnieuw instellen</button>
       <div class="card-body">
-        <div *ngIf="contentfulItem">
-          <div class="text-left">
-            <div [innerHTML]="contentfulItem.fields['mdTextBody'] | mdToHtml">
+        @if (contentfulItem) {
+          <div>
+            <div class="text-left">
+              <div [innerHTML]="contentfulItem.fields['mdTextBody'] | mdToHtml">
+              </div>
             </div>
           </div>
-        </div>
+        }
       </div>
     </div>
   </div>

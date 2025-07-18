@@ -3,14 +3,14 @@ import { Subject } from 'rxjs';
 
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { LanguageService } from '../services/language.service';
-import { NgFor, NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-language-modal',
   templateUrl: './language-modal.component.html',
   styleUrls: ['./language-modal.component.scss'],
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [],
 })
 export class LanguageModalComponent implements OnInit {
   public bsModalRef = inject(BsModalRef);

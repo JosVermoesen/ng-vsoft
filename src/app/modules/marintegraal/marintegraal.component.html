@@ -56,39 +56,43 @@
 
         <div class="card mb-resp">
           <div class="card-body">
-            <div *ngIf="contentfulContractTypesEntry">
-              <div class="text-left">
-                <div
+            @if (contentfulContractTypesEntry) {
+              <div>
+                <div class="text-left">
+                  <div
                   [innerHTML]="
                     contentfulContractTypesEntry.fields['markdownText']
                       | mdToHtml
                   "
-                ></div>
+                  ></div>
+                </div>
               </div>
-            </div>
+            }
           </div>
         </div>
       </accordion-group>
       <accordion-group heading="Documenten">
         <div class="text-left">
           <!-- Some text
-                    <p>This content is a paragraph</p>
-                    <p>Another paragraph</p> -->
+          <p>This content is a paragraph</p>
+          <p>Another paragraph</p> -->
         </div>
       </accordion-group>
       <accordion-group
         heading="Update Historiek"
         [isOpen]="accordeonUpdateOpen"
-      >
-        <div *ngIf="contentfulUpdatesEntry">
-          <div class="text-left">
-            <div
+        >
+        @if (contentfulUpdatesEntry) {
+          <div>
+            <div class="text-left">
+              <div
               [innerHTML]="
                 contentfulUpdatesEntry.fields['markdownText'] | mdToHtml
               "
-            ></div>
+              ></div>
+            </div>
           </div>
-        </div>
+        }
       </accordion-group>
     </accordion>
   </div>

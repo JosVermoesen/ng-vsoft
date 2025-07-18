@@ -11,7 +11,7 @@ import {
 
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
-import { AlertComponent } from 'ngx-bootstrap/alert/alert.component';
+import { AlertComponent } from 'ngx-bootstrap/alert';
 
 import { environment } from '../../../environments/environment';
 import { IContactmail } from './models/contactmail';
@@ -21,13 +21,13 @@ import { OfficeInfoModalComponent } from './officeinfo-modal/office-info-modal.c
 import { ToastrService } from 'ngx-toastr';
 import { MailService } from './_services/mail.service';
 import { AlertModule } from 'ngx-bootstrap/alert';
-import { NgIf, NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   standalone: true,
-  imports: [NgIf, NgFor, AlertModule, ReactiveFormsModule, TranslateModule],
+  imports: [AlertModule, ReactiveFormsModule, TranslateModule],
 })
 export class ContactComponent implements OnInit {
   officeModalRef!: BsModalRef;
