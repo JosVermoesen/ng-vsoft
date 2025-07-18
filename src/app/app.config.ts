@@ -47,7 +47,7 @@ export const appConfig: ApplicationConfig = {
     ),
     LanguageService,
     BsModalRef,
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    // { provide: LocationStrategy, useClass: HashLocationStrategy },
     provideAnimations(),
   ],
 };
