@@ -7,7 +7,7 @@ Working version here: [RV Insurance site](https://rv.be)
 
 marIntegraal users can get in touch for their own version of this app (including use of mail service via our dotnet core server)
 
-## Development Tools used for this app on december 2024
+## Development Tools used for this app on 2025 July
 
 - [Install NVM for different versions of NodeJS)](https://github.com/coreybutler/nvm-windows/releases)
 - In terminal `nvm install 20.14.0` and `nvm use 20.14.0`
