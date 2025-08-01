@@ -3,7 +3,6 @@
 ## Getting started for users
 
 Working version here: [Vsoft software site](https://vsoft.be)
-Working version here: [RV Insurance site](https://rv.be)
 
 marIntegraal users can get in touch for their own version of this app (including use of mail service via our dotnet core server)
 
