@@ -46,8 +46,7 @@ export const appConfig: ApplicationConfig = {
       withInterceptors([errorInterceptor])
     ),
     LanguageService,
-    BsModalRef,
-    // { provide: LocationStrategy, useClass: HashLocationStrategy },
+    BsModalRef,    
     provideAnimations(),
   ],
 };
