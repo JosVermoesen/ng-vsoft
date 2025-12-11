@@ -11,13 +11,7 @@ if (environment.production) {
   window.console.log = function () {
     ('');
   };
-  window.console.error = function () {
-    ('');
-  };
 }
-/* window.console.log = function () {
-  ('');
-}; */
 
 bootstrapApplication(AppComponent, appConfig).catch((err) =>
   console.error(err)

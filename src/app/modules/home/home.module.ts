@@ -9,26 +9,25 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Import FontAwesomeModule from the correct package
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        HomeRoutingModule,
-        CarouselModule.forRoot(),
-        TranslateModule.forChild({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: createTranslateLoader,
-                deps: [HttpClient],
-            },
-        }),
-        FontAwesomeModule,
-        HomeComponent,
-    ],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    CarouselModule.forRoot(),
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
+    FontAwesomeModule,
+    HomeComponent,
+  ],
 })
 export class HomeModule {}

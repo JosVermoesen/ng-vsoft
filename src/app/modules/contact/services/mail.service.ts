@@ -11,7 +11,7 @@ export class MailService {
 
   constructor(private http: HttpClient) {}
 
-  sendMail(contactMail: IContactmail) {
+  sendMail(contactMail: IContactmail) {    
     return this.http.post(this.baseUrl + 'contactmail', contactMail);
   }
 }
