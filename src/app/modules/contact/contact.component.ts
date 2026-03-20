@@ -22,7 +22,6 @@ import { ToastrService } from 'ngx-toastr';
 import { MailService } from './_services/mail.service';
 import { AlertModule } from 'ngx-bootstrap/alert';
 
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -60,7 +59,7 @@ export class ContactComponent implements OnInit {
     private modalService: BsModalService,
     private mailService: MailService,
 
-    private ts: TranslateService
+    private ts: TranslateService,
   ) {}
 
   ngOnInit(): void {
@@ -145,14 +144,14 @@ export class ContactComponent implements OnInit {
     // name insert
     this.templateBody = this.templateBody.replace(
       stringNameToReplace,
-      this.form.value.name
+      this.form.value.name,
     );
 
     const stringInBlockToReplace = '.{message}';
     // name insert
     this.templateBody = this.templateBody.replace(
       stringInBlockToReplace,
-      this.form.value.message
+      this.form.value.message,
     );
 
     this.form.value.template = this.templateBody;

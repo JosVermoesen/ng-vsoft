@@ -85,7 +85,7 @@ Before building, set resolveJsonModule to 'true' :
 
 ## Good practice: Updating Angular as needed
 
-This app is on Angular 20. Update to latest Angular 20 with:
-`ng update @angular/cli@20 @angular/core@20`
+This app is on Angular 21. Update to latest Angular 21 with:
+`ng update @angular/cli@21 @angular/core@21`
 
 Follow the instructions eventualy for fixes

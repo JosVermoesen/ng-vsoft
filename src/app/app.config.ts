@@ -1,5 +1,9 @@
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi, withInterceptors } from '@angular/common/http';
+import {
+  HttpClient,
+  provideHttpClient,
+  withInterceptorsFromDi,
+  withInterceptors,
+} from '@angular/common/http';
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
@@ -39,14 +43,14 @@ export const appConfig: ApplicationConfig = {
       ModalModule.forRoot(),
       AccordionModule.forRoot(),
       SharedModule.forRoot(),
-      FontAwesomeModule
+      FontAwesomeModule,
     ),
     provideHttpClient(
       withInterceptorsFromDi(),
-      withInterceptors([errorInterceptor])
+      withInterceptors([errorInterceptor]),
     ),
     LanguageService,
-    BsModalRef,    
+    BsModalRef,
     provideAnimations(),
   ],
 };

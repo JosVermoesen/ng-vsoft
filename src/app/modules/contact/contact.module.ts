@@ -16,19 +16,20 @@ import { ContactComponent } from './contact.component';
 import { OfficeInfoModalComponent } from './officeinfo-modal/office-info-modal.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        ContactRoutingModule,
-        TranslateModule.forChild({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: createTranslateLoader,
-                deps: [HttpClient],
-            },
-        }),
-        AlertModule.forRoot(),
-        ReactiveFormsModule,
-        ContactComponent, OfficeInfoModalComponent,
-    ],
+  imports: [
+    CommonModule,
+    ContactRoutingModule,
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
+    AlertModule.forRoot(),
+    ReactiveFormsModule,
+    ContactComponent,
+    OfficeInfoModalComponent,
+  ],
 })
 export class ContactModule {}
