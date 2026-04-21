@@ -13,6 +13,7 @@ if (environment.production) {
   };
 }
 
-bootstrapApplication(AppComponent, {...appConfig, providers: [provideZoneChangeDetection(), ...appConfig.providers]}).catch((err) =>
-  console.error(err)
-);
+bootstrapApplication(AppComponent, {
+  ...appConfig,
+  providers: [provideZoneChangeDetection(), ...appConfig.providers],
+}).catch((err) => console.error(err));
