@@ -35,7 +35,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets", "src/web.config"],
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles.scss", "node_modules/ngx-toastr/toastr.css"],
             "scripts": ["bootstrap/dist/js/bootstrap.bundle.min.js"],
             "browser": "src/main.ts",
             "stylePreprocessorOptions": {
