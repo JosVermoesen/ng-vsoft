@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  version: '20.3.3',
+  version: '21.2.15',
 
   // ApiUrl of the production database
   apiUrl: 'https://rv.be/api/',
@@ -8,9 +8,9 @@ export const environment = {
   apiBlackListDomain: ['rv.be/api/account'],
 
   // Api Key and info for using contactmail functionality
-  apiVsoftMailGuid: 'ask for a key',
-  apiVsoftSendFromAddress: 'your email address',
-  apiVsoftSendFromName: 'Your organisations name',
+  apiVsoftMailGuid: '5205fa57-766f-4af0-9207-d993d81d759b',
+  apiVsoftSendFromAddress: 'josvermoesen@rv.be',
+  apiVsoftSendFromName: 'Roelandt & Vermoesen 1935',
 
   // For vsoft
   contentful: {
@@ -19,10 +19,10 @@ export const environment = {
   },
 
   // Banking info
-  brokerIban: 'Your IBAN',
-  brokerBic: 'Your BIC',
-  brokerName: 'Your organisations name',
+  brokerIban: 'BE83891854037015',
+  brokerBic: 'VDSPBE91',
+  brokerName: 'Roelandt en Vermoesen bv',
 
   // google meetup
-  meetupCode: 'your meetupcode',
+  meetupCode: '9310gb141',
 };

@@ -10,7 +10,7 @@
 
   "MARINTEGRAAL": {
     "Seo-Title": "Vsoft marIntegraal 1985",
-    "Seo-Keywords": "Vsoft, Plesk, Dotnet Core, ASP.NET 8, HTTPS",
+    "Seo-Keywords": "Vsoft, Plesk, Dotnet Core, ASP.NET 10, HTTPS",
     "Seo-Description": "Boekhoud- en administratie pakket naar Belgisch recht sinds 1985 "
   },
 
@@ -39,7 +39,7 @@
     "Carousel-Link2": "/hosting",
     "Carousel-TargetLink2": "_self",
     "Carousel-Title2": "Hosting 2000",
-    "Carousel-SubTitle2": "ASP.NET 8.x (Core) https hosting en mail diensten",
+    "Carousel-SubTitle2": "ASP.NET 10 (Core) https hosting en mail diensten",
     "Carousel-ButtonLabel2": "Info",
     "Carousel-ButtonClass2": "btn btn-success btn-lg",
 
@@ -64,7 +64,7 @@
     "Icon-Label1": "Bedrijfsbeheer",
     "Icon-SubLabel1": "Boekhoud- en administratie pakket naar Belgisch recht",
     "Icon-Label2": "Plesk Hosting",
-    "Icon-SubLabel2": "Moderne ASP.NET 8.x (Core) https hosting en webmail",
+    "Icon-SubLabel2": "Moderne ASP.NET 10 (Core) https hosting en webmail",
     "Icon-Label3": "PWA Apps",
     "Icon-SubLabel3": "Consultatie Apps voor uw klanten"
   },

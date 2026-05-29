@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  version: '20.3.3',
+  version: '21.2.15',
 
   // while using a dotnet development server (+local or production database)
   // apiUrl: 'https://localhost:5001/api/',
