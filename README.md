@@ -1,4 +1,4 @@
-# Multi-language single page app (spa) using Angular and Bootstrap
+# Multi-language single page app using Angular and Bootstrap
 
 ## Getting started for users
 
